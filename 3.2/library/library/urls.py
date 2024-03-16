@@ -23,6 +23,7 @@ from main.views import (books_list, CreateBookView, BookDetailsView, BookUpdateV
 
 router = SimpleRouter()
 #зарегистрируйте вьюсет для заказов
+router.register('orders', OrderViewSet, basename='orders')
 
 
 urlpatterns = [
